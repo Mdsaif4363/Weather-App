@@ -6,6 +6,7 @@ A lightweight, responsive weather application using OpenWeatherMap that supports
 
 - Open `index.html` locally or serve via a static server (recommended for geolocation).
 - Example screenshot(s): add your own in a `/Screenshot` folder and reference here.
+- ![image alt](https://github.com/Mdsaif4363/Weather-App/blob/593e8c71e6d5fb3bf79b95de5d1eaa0de74d5f95/Screenshot%202025-08-25%20155511.png)
 
 ## Features
 
