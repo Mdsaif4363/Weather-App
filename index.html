@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2563eb">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-decor"></div>
+    <div class="container">
+        <header class="app-header">
+            <div class="brand">
+                <span class="brand-icon" aria-hidden="true">⛅️</span>
+                <h1 class="brand-title">Weather App</h1>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle-btn" class="btn btn-ghost" aria-label="Toggle theme">Toggle Theme</button>
+                <button id="unit-toggle-btn" class="btn" aria-label="Toggle units">Switch to °F</button>
+            </div>
+        </header>
+
+        <p class="tagline">Search weather by city or use your current location.</p>
+
+        <div class="input-container card">
+            <div class="input-with-icon">
+                <input type="text" id="city-input" placeholder="Search city (e.g., London, Paris)" aria-label="City name">
+                <span class="input-icon" aria-hidden="true">
+                    <!-- magnifier -->
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </span>
+            </div>
+            <div class="input-actions">
+                <button id="get-weather-btn" class="btn">Get Weather</button>
+                <button id="use-location-btn" class="btn btn-outline">Use My Location</button>
+            </div>
+        </div>
+
+        <div id="loading" class="hidden loading" role="status" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            Loading…
+        </div>
+        <p id="error-message" class="hidden error" role="alert">City not found. Please try again.</p>
+
+        <section id="weather-info" class="hidden weather-card card">
+            <div class="weather-header">
+                <div>
+                    <h2 id="city-name"></h2>
+                    <p id="updated-time" class="subtle"></p>
+                </div>
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="" class="weather-icon">
+                    <div>
+                        <p id="temperature" class="temp"></p>
+                        <p id="description" class="desc"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-details">
+                <div><span class="label">Feels like:</span> <span id="feels-like"></span></div>
+                <div><span class="label">Humidity:</span> <span id="humidity"></span></div>
+                <div><span class="label">Wind:</span> <span id="wind"></span></div>
+                <div><span class="label">Sunrise:</span> <span id="sunrise"></span></div>
+                <div><span class="label">Sunset:</span> <span id="sunset"></span></div>
+            </div>
+        </section>
+
+        <section id="forecast-section" class="hidden">
+            <h3>5-Day Forecast</h3>
+            <div id="forecast-cards" class="forecast-grid"></div>
+        </section>
+
+        <section id="history-section">
+            <div class="section-header">
+                <h3>Recent Searches</h3>
+                <button id="clear-history-btn" class="btn btn-ghost small" aria-label="Clear all recent searches">Clear All</button>
+            </div>
+            <div id="history" class="history-chips"></div>
+            <p id="history-empty" class="subtle hidden">No recent searches yet.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
