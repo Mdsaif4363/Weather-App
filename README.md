@@ -5,7 +5,7 @@ A lightweight, responsive weather application using OpenWeatherMap that supports
 ## Demo
 
 - Open `index.html` locally or serve via a static server (recommended for geolocation).
-- Example screenshot(s): add your own in a `Screenshot 2025-08-25 155511.png` folder and reference here.
+- Example screenshot(s): add your own in a `Desktop/Screenshot 2025-08-25 155511.png` folder and reference here.
 
 ## Features
 
