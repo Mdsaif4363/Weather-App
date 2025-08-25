@@ -1,5 +1,5 @@
 // ============ Configuration ============
-const API_KEY = "YOUR_API_KEY"; // <-- Put your OpenWeatherMap API key here
+const API_KEY = "YOUR_OPENWEATHER_API_KEY"; // <-- Put your OpenWeatherMap API key here
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 // ============ State & Elements ============
